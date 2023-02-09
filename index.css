@@ -16,18 +16,18 @@ body {
 
 .card {
     max-width: 400px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: white;
     display: grid;
     grid-template-rows: 60% 40%;
-    padding: 1rem;
+    padding: 1.5rem;
     justify-items: center;
 }
 
 .card__qr-code {
-    border-radius: 10px;
+    border-radius: 15px;
     height: 100%;
-    max-width: 100%;
+    width: 100%;
 }
 
 .card__information {
@@ -36,16 +36,39 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 6%;
+    padding: 0% 6% 0% 6%;
+
 }
 
 .card__description {
     color: hsl(220, 15%, 55%);
     font-size: 1.3rem;
+
 }
 
 .card__header {
     font-weight: 700;
     font-size: 1.7rem;
     color: hsl(218, 44%, 22%);
+    margin-bottom: 0%;
+}
+
+@media (max-width: 500px) {
+    .card {
+        max-width: 320px;
+        max-height: 75%;
+        padding: 3%;
+    }
+
+    .card__information {
+        padding-top: 0%;
+    }
+
+    .card__header {
+        font-size: 1.4rem;
+    }
+
+    .card__description {
+        font-size: 1rem;
+    }
 }
